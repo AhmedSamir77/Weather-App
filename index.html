@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!--start navbar -->
+
+    <div class="container py-4">
+      <nav class="navbar custom-navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#">
+          <div class="d-flex">
+            <div class="logo">
+              <img src="images/logo@2x.png" class="w-50" alt="" />
+            </div>
+            <div>
+              <h1 class="mb-0 fs-6 text-white">Weather</h1>
+              <small>tagline goes here</small>
+            </div>
+          </div>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex gap-4 me-5">
+            <li class="nav-item active">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">News</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Live cameras</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Photos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <!-- end navbar -->
+
+    <!-- start section  -->
+
+    <section id="home" class="home-page">
+      <div class="container d-flex justify-content-center">
+        <div class="input-group mb-3">
+          <input
+            id="weather"
+            type="text"
+            class="form-control border border-0 rounded-5 custom-input"
+            placeholder="Find your location..."
+            aria-label="Recipient's username"
+            aria-describedby="button-addon2"
+          />
+          <button
+            class="btn custom-btn border border-0 rounded-5 px-5"
+            type="button"
+            id="button-addon2"
+          >
+            Find
+          </button>
+        </div>
+      </div>
+
+      <div class="container">
+        <div id="weather-content" class="row gx-0"></div>
+      </div>
+    </section>
+
+    <!-- end section -->
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
